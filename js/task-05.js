@@ -4,10 +4,11 @@ const output = document.querySelector("#name-output");
 
 const handleInput = (event) => {
   //   console.log(event.currentTarget.value);
-  if (event.currentTarget.value !== "") {
-    return (output.textContent = event.currentTarget.value);
+  if (event.currentTarget.value === "") {
+    return (output.textContent = "Anonymous");
   }
-  return output.textContent;
+
+  return (output.textContent = event.currentTarget.value);
 };
 
 textInput.addEventListener("input", handleInput);
