@@ -11,7 +11,3 @@ textInput.addEventListener("blur", () => {
 function addClass() {
   textInput.classList.add(c1), textInput.classList.remove(c2);
 }
-
-// function addClass() {
-//   textInput.classList.add(c1), textInput.classList.remove(c2);
-// }
