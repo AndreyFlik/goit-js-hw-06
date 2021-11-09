@@ -4,20 +4,14 @@ const saveBtn = document.querySelector('#validation-input[data-length="6"]');
 
 textInput.addEventListener("blur", () => {
   if (textInput.value.length === Number(saveBtn.dataset.length)) {
-    return (
-      textInput.classList.add("valid"), textInput.classList.remove("invalid")
-    );
+    return addClass("valid", "invalid");
   }
-  return (
-    textInput.classList.add("invalid"), textInput.classList.remove("valid")
-  );
+  return addClass("invalid", "valid");
 });
-
 function addClass() {
-  textInput.classList.add("valid");
-  textInput.classList.remove("invalid");
+  textInput.classList.add(c1), textInput.classList.remove(c2);
 }
 
-// function dellClass() {
-
+// function addClass() {
+//   textInput.classList.add(c1), textInput.classList.remove(c2);
 // }
