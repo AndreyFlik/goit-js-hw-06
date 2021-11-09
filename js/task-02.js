@@ -13,6 +13,7 @@ const ingredientsIter = ingredients.map((itm) => {
   const listIng = document.createElement("li");
   listIng.classList.add("item");
   listIng.textContent = itm;
-  console.log(listIng);
-  selector.append(listIng);
+  return listIng;
 });
+// console.log(ingredientsIter);
+selector.append(...ingredientsIter);

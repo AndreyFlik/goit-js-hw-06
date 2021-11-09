@@ -12,3 +12,12 @@ textInput.addEventListener("blur", () => {
     textInput.classList.add("invalid"), textInput.classList.remove("valid")
   );
 });
+
+function addClass() {
+  textInput.classList.add("valid");
+  textInput.classList.remove("invalid");
+}
+
+// function dellClass() {
+
+// }
